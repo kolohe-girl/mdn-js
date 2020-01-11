@@ -7,26 +7,28 @@
     </head>
 
     <body>
-        <div id="evaluating-variables" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+        <div id="evaluating-variables" style="font-family: 'Courier New', Courier, monospace;">
             <h3>Evaluating Variables</h3>
-            <div>
-                
+            <div style="width: 500px;">
+                A variable declared using the <strong>var</strong> or <strong>let</strong> statement with no assigned value specified has the value of <u>undefined</u>
+                <br /><br />
+                An attempt to access an undeclared variable results in a <u>ReferenceError</u> exception being thrown:
             </div>
             <pre>
-                var a;
-                console.log('The value of a is ' + a); // The value of a is undefined
+                <strong style="color:rgb(23, 11, 104)">var a;</strong>
+                <span style="color:seagreen">console.log</span>('The value of a is ' + a); <em style="color:darkgrey">// The value of a is undefined</em>
 
-                console.log('The value ofb is ' + b); // The value of b is undefined
-                var b;
-                // This one may puzzle youuntil you read 'Variable Hoisting' below
+                console.log('The value ofb is ' + b); <em style="color:darkgrey">// The value of b is undefined</em>
+                <strong style="color:rgb(23, 11, 104)">var b;</strong>
+                <em style="color:darkgrey">// This one may puzzle youuntil you read 'Variable Hoisting' below</em>
 
-                console.log('The value of c is ' + c); // Uncaught ReferenceError: c is not defined
+                console.log('The value of c is ' + c); <em style="color:darkgrey">// Uncaught ReferenceError: c is not defined</em>
 
-                let x;
-                console.log('The value of x is ' + x); // The value of x is undefined
+                <strong style="color:rgb(23, 11, 104)">let x;</strong>
+                console.log('The value of x is ' + x); <em style="color:darkgrey">// The value of x is undefined</em>
 
-                console.log('The value of y is ' + y); // Uncaught ReferenceError: y is not defined
-                let y;
+                console.log('The value of y is ' + y); <em style="color:darkgrey">// Uncaught ReferenceError: y is not defined</em>
+                <strong style="color:rgb(23, 11, 104)">let y;</strong>
             </pre>
         </div>
     </body>
