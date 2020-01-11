@@ -1,2 +1,2 @@
-# mdn-js
-MDN JavaScript Material Code
+# mdn-js-code
+MDN JavaScript Material Code.
