@@ -8,8 +8,25 @@
 
     <body>
         <div id="evaluating-variables" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+            <h3>Evaluating Variables</h3>
+            <div>
+                
+            </div>
             <pre>
                 var a;
+                console.log('The value of a is ' + a); // The value of a is undefined
+
+                console.log('The value ofb is ' + b); // The value of b is undefined
+                var b;
+                // This one may puzzle youuntil you read 'Variable Hoisting' below
+
+                console.log('The value of c is ' + c); // Uncaught ReferenceError: c is not defined
+
+                let x;
+                console.log('The value of x is ' + x); // The value of x is undefined
+
+                console.log('The value of y is ' + y); // Uncaught ReferenceError: y is not defined
+                let y;
             </pre>
         </div>
     </body>
